@@ -73,7 +73,10 @@ fn check_page_ordering(page_vec: &Vec<u64>, ordering: &HashMap<u64, HashSet<u64>
     true
 }
 
-fn fix_page_ordering(mut page_vec: Vec<u64>, ordering: &HashMap<u64, HashSet<u64>>) -> Option<Vec<u64>> {
+fn fix_page_ordering(
+    mut page_vec: Vec<u64>,
+    ordering: &HashMap<u64, HashSet<u64>>,
+) -> Option<Vec<u64>> {
     let mut updated = true;
     let mut ever_updated = false;
     'outer: while updated {
@@ -96,12 +99,8 @@ fn fix_page_ordering(mut page_vec: Vec<u64>, ordering: &HashMap<u64, HashSet<u64
             previous_pages.insert(page, vec![i]);
         }
     }
-    
-    if ever_updated {
-        Some(page_vec)
-    } else {
-        None
-    }
+
+    if ever_updated { Some(page_vec) } else { None }
 }
 
 fn process_pages(lines_incl_empty: impl Iterator<Item = String>) -> u64 {
