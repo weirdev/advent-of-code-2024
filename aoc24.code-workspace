@@ -9,6 +9,10 @@
 			"path": "day13"
 		},
 		{
+			"name": "day14",
+			"path": "day14"
+		},
+		{
 			"name": "advent-of-code-2024",
 			"path": "."
 		}
