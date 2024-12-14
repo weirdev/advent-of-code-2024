@@ -1,12 +1,12 @@
 {
 	"folders": [
 		{
-			"name": "day11",
-			"path": "day11"
-		},
-		{
 			"name": "day12",
 			"path": "day12"
+		},
+		{
+			"name": "day13",
+			"path": "day13"
 		},
 		{
 			"name": "advent-of-code-2024",
